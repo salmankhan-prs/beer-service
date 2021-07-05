@@ -8,6 +8,7 @@ import java.util.List;
 public interface BeerReposistory extends JpaRepository<Beer, Integer> {
     Beer findByBeerName(String name);
     Beer findByBeerId(String s);
+    Beer findByBeerPriceAndBeerId();
     List<Beer> findByIsAvailable(Boolean b);
     List<Beer> findByBeerPriceGreaterThanEqual(Double a);
     List<Beer> findByBeerPriceGreaterThanEqualAndIsAvailableOrderById(Double d,Boolean b);
