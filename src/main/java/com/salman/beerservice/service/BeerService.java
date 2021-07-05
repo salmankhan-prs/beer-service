@@ -3,7 +3,7 @@ package com.salman.beerservice.service;
 import com.salman.beerservice.model.Beer;
 
 import java.util.List;
-
+//beer service
 public interface BeerService {
     public Beer createBeer(Beer beer);
     List<Beer> findAllBear();
